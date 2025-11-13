@@ -29,7 +29,7 @@ jobs:
           context: ./Festivalapi-SpringBoot
           file: ./Festivalapi-SpringBoot/backend.Dockerfile
           push: true
-          tags: ${{ secrets.D_U }}/lab10-1B:latest
+          tags: ${{ secrets.D_U }}/lab10-1b:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v5
@@ -37,4 +37,4 @@ jobs:
           context: ./festival-api
           file: ./festival-api/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.D_U }}/lab10-1F:latest
+          tags: ${{ secrets.D_U }}/lab10-1f:latest
